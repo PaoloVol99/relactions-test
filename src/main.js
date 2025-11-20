@@ -20,11 +20,11 @@ function handleScroll() {
 
   let scrollPosition = window.scrollY;
   const distanceFromTop = section.offsetTop
-  const relativeScroll = distanceFromTop - scrollPosition
+  const relativeScroll = scrollPosition - distanceFromTop
   // console.log('rel',relativeScroll)
   // console.log('inn',innerHeight)
   if (relativeScroll > window.innerHeight) return
-  parallaxElement.style.transform = `translate3d(0px, ${-relativeScroll * 0.25}px, 0px)`;
+  parallaxElement.style.transform = `translate3d(0px, ${relativeScroll * 0.25}px, 0px)`;
 }
 
 function handleNavbarOnDesktop() {

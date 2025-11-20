@@ -228,6 +228,22 @@ header {
     padding-top: 30px;
   }
   
+  .bg-gradient {
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.20);
+      z-index: 1;
+    }
+  }
+  
   .hero__text {
     display: flex;
     flex-direction: column;
@@ -497,6 +513,7 @@ header {
         display: inline-flex;
         /* gap: 60px; */
         animation: marquee 6s linear infinite;
+        animation-fill-mode: forwards;
         width: max-content;
         transform: translateX(25%);
 
@@ -753,8 +770,10 @@ footer {
       display: flex;
       gap: 32px;
       font-weight: 500;
+      justify-content: space-between;
       @media screen and (min-width: 992px) {
         gap: 0;
+        justify-content: start;
       }
       
       .footer__col {
