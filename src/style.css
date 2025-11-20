@@ -751,6 +751,16 @@ header {
               }
             }
 
+            h4 {
+              color: #FFF;
+              text-align: center;
+              font-family: "DM Serif Display";
+              font-size: 43px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 43px; /* 100% */
+            }
+
             button {
               border: none;
             }
