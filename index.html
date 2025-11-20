@@ -3,11 +3,385 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>relactions-test</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Navbar -->
+      <header>
+        <nav class="test__navbar">
+          <div class="left-content">
+            <img src="/images/Burger_menu.svg" alt="menu" class="burger-menu burger-menu__mobile">
+            <img src="/images/Burger_menu_white.svg" alt="menu" class="burger-menu burger-menu__desktop">
+            <img src="/images/navbar_line.svg" alt="">
+            <ul class="navbar__links">
+              <li>Location</li>
+              <li>Spiagge</li>
+              <li>Bars&Restaurants</li>
+            </ul>
+          </div>
+          <div class="logo-wrapper">
+            <img src="/images/logo.png" alt="" class="logo__mobile">
+            <img src="/images/logo_white.png" alt="" class="logo logo__desktop">
+          </div>
+          <div class="right-content">
+            <div class="language-switch">IT</div>
+            <a href="/" class="button__desktop test__button">Book Now</a>
+          </div>
+        </nav>
+      </header>
+      <!-- Main content -->
+      <main>
+        <!-- Hero section -->
+        <section class="hero">
+          <div class="bg-gradient"></div>
+          <div class="test__container">
+            <div class="hero__text">
+              <h3 class="subtitle">Exclusive beaches</h3>
+              <h1 class="main-title">Lorem ipsum dolor este</h1>
+            </div>
+            <div class="hero__line">
+              <img src="/images/hero_line.svg" alt="">
+            </div>
+            <a href="/" class="test__button">
+              Explore
+            </a>
+          </div>
+          <div class="hero__carousel splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="/images/image_hero.jpg" alt="" 
+                  sizes="100vw" 
+                  srcset="/images/image_hero.jpg 400w,
+                  /images/image_hero.jpg 600w,
+                  /images/image_hero.jpg 1000w,
+                  /images/image_hero.jpg 1400w">
+                </li>
+                <li class="splide__slide">
+                  <img src="/images/image_marriages.jpg" alt="" 
+                  sizes="100vw" 
+                  srcset="/images/image_marriages.jpg 400w,
+                  /images/image_marriages.jpg 600w,
+                  /images/image_marriages.jpg 1000w,
+                  /images/image_marriages.jpg 1400w">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- First section -->
+        <section class="first-section">
+          <div class="test__container">
+            <div class="images-wrapper row custom-gap">
+              <div class="col-6 col-xl-2 offset-xl-3">
+                <img class="image-1 image-mobile" src="/images/image_marriages.jpg" alt="" 
+                sizes="(min-width: 1200px) 16.66vw, calc(50vw - 30px)" 
+                srcset="/images/image_marriages.jpg 200w,
+                /images/image_marriages.jpg 400w" 
+                loading="lazy">
+                <img class="image-1 image-desktop" src="/images/image_beach.jpg" alt="" 
+                sizes="(min-width: 1200px) 16.66vw, calc(50vw - 30px)" 
+                srcset="/images/image_beach.jpg 200w,
+                /images/image_beach.jpg 400w,
+                /images/image_beach.jpg 800w" 
+                loading="lazy">
+              </div>
+              <div class="col-6 col-xl-4 offset-xl-3">
+                <img class="image-2 image-mobile" src="/images/image_pool.jpg" alt="" 
+                sizes="(min-width: 1200px) 33.33vw, calc(50vw - 30px)" 
+                srcset="/images/image_pool.jpg 400w, 
+                /images/image_pool.jpg 600w" 
+                loading="lazy">
+                 <img class="image-2 image-desktop" src="/images/image_marriages.jpg" alt="" 
+                sizes="(min-width: 1200px) 33.33vw, calc(50vw - 30px)" 
+                srcset="/images/image_marriages.jpg 400w, 
+                /images/image_marriages.jpg 600w,
+                /images/image_marriages.jpg 800w" 
+                loading="lazy">
+              </div>
+            </div>
+            <div class="first-section__text">
+              <h3 class="subtitle">location</h3>
+              <h1 class="main-title">Recta dolor e sinte dexer</h1>
+              <p>Lorem ipsum dolor sit amet consectetur. 
+                Purus eu suspendisse consequat et tincidunt tristique risus. 
+                Fames tristique ridiculus varius scelerisque a malesuada venenatis. 
+                Laoreet mollis magna blandit etiam.
+              </p>
+              <a href="/" class="test__button">
+                Explore
+              </a>
+            </div>
+            <div class="images-wrapper row custom-gap">
+              <div class="col-6 col-xl-3">
+                <img class="image-3 image-mobile" src="/images/image_pool_2.jpg" alt="" 
+                sizes="(min-width: 1200px) 25vw, calc(50vw - 30px)" 
+                srcset="/images/image_pool_2.jpg 200w,
+                /images/image_pool_2.jpg 400w" 
+                loading="lazy">
+                <img class="image-3 image-desktop" src="/images/image_bar.jpg" alt="" 
+                sizes="(min-width: 1200px) 25vw, calc(50vw - 30px)" 
+                srcset="/images/image_bar.jpg 200w,
+                /images/image_bar.jpg 400w,
+                /images/image_bar.jpg 800w" 
+                loading="lazy">
+              </div>
+              <div class="col-6 col-xl-3 offset-xl-4">
+                <img class="image-4 image-mobile" src="/images/image_sea.jpg" alt="" 
+                sizes="(min-width: 1200px) 25vw, calc(50vw - 30px)" 
+                srcset="/images/image_sea.jpg 200w,
+                /images/image_sea.jpg 400w" 
+                loading="lazy">
+                <img class="image-4 image-desktop" src="/images/image_pool.jpg" alt="" 
+                sizes="(min-width: 1200px) 25vw, calc(50vw - 30px)" 
+                srcset="/images/image_pool.jpg 200w,
+                /images/image_pool.jpg 400w,
+                /images/image_pool.jpg 800w" 
+                loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Second section -->
+        <section class="second-section">
+          <img class="bg-image" src="/images/image_beach.jpg" alt="" 
+          sizes="100vw" 
+          srcset="/images/image_beach.jpg 200w,
+            /images/image_beach.jpg 400w,
+            /images/image_beach.jpg 800w,
+            /images/image_beach.jpg 1200w,
+            /images/image_beach.jpg 1600w,
+            /images/image_beach.jpg 2000w,"
+          loading="lazy">
+          <div class="bg-gradient"></div>
+          <div class="test__container">
+            <h3 class="subtitle">le nostre spiagge</h3>
+            <h1 class="main-title">
+              <div class="marquee-inner">
+                <span>Spiaggia Privata</span>
+                <span>Spiaggia Privata</span>
+
+                <span>Spiaggia Privata</span>
+                <span>Spiaggia Privata</span>
+              </div>
+            </h1>
+            <a href="/" class="test__button">
+              Explore
+            </a>
+          </div>
+        </section>
+        <!-- Third section -->
+        <section class="third-section">
+          <div class="test__container">
+            <div class="section-content">
+              <div class="row">
+                <div class=" image-col col-sm-12 col-md-4 offset-md-2">
+                  <img src="/images/image_bar.jpg" alt="" 
+                  sizes="(min-width: 600px) 33.33vw, calc(100vw - 40px)" 
+                  srcset="/images/image_bar.jpg 400w,
+                  /images/image_bar.jpg 600w,
+                  /images/image_bar.jpg 800w"
+                  loading="lazy">
+                </div>
+                <div class=" text-col col-sm-12 col-md-4 offset-md-1 col-text">
+                  <h3 class="subtitle">bar & restaurant</h3>
+                  <h2 class="main-title">E dicter lorus sinder tecte rset</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. 
+                    Purus eu suspendisse consequat et 
+                    tincidunt tristique risus. Fames tristique
+                     ridiculus varius scelerisque a malesuada 
+                     venenatis. Laoreet mollis magna blandit etiam.
+                  </p>
+                  <a href="/" class="test__button">
+                    Explore
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="image-col col-sm-12 col-md-4 offset-md-1">
+                  <img src="/images/image_pool.jpg" alt="" 
+                  sizes="(min-width: 600px) 33.33vw, calc(100vw - 40px)" 
+                  srcset="/images/image_pool.jpg 400w,
+                  /images/image_pool.jpg 600w,
+                  /images/image_pool.jpg 800w" 
+                  loading="lazy">
+                </div>
+                <div class="text-col col-sm-12 col-md-4 offset-md-2 col-text">
+                  <h3 class="subtitle">attività</h3>
+                  <h2 class="main-title">E dicter lorus sinder tecte rset</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur. 
+                    Turpis nibh elementum feugiat eu fermentum est nibh. 
+                    Adipiscing sapien viverra ut amet diam nulla sit fermentum. 
+                    Neque est sit pharetra dui vestibulum mattis euismod. Etiam fringilla laoreet.
+                  </p>
+                  <a href="/" class="test__button">
+                    Explore
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Fourth section -->
+        <section class="fourth-section">
+          <div class="parallax-bg">
+            <div class="bg-gradient"></div>
+            <img src="/images/image_marriages.jpg" alt="" 
+            sizes="100vw" 
+            srcset="/images/image_marriages.jpg 200w,
+            /images/image_marriages.jpg 400w,
+            /images/image_marriages.jpg 800w,
+            /images/image_marriages.jpg 1200w,
+            /images/image_marriages.jpg 1600w,
+            /images/image_marriages.jpg 2000w"
+            loading="lazy">
+          </div>
+          <div class="test__container">
+            <h3 class="subtitle">wedding</h3>
+            <h1 class="main-title">Pacchetti Matrimoniali</h1>
+            <a href="/" class="test__button">
+              Explore
+            </a>
+          </div>
+        </section>
+        <!-- Fifth section -->
+        <section class="fifth-section">
+          <div class="test__container">
+            <h1 class="main-title">Offerte</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. 
+              Faucibus sed neque pellentesque vulputate 
+              semper tellus vitae. Mauris feugiat.
+            </p>
+            <a href="/" class="test__button">
+              Explore
+            </a>
+            <div class="offers-cards">
+              <a class="offer" href="/">
+                <img src="/images/image_sea.jpg" alt="" 
+                sizes="(min-width: 992px) 23vw" 
+                srcset="/images/image_sea.jpg 200w,
+                /images/image_sea.jpg 400w,
+                /images/image_sea.jpg 800w"
+                loading="lazy">
+                <div class="offer__text">
+                  <span>Save over 15%</span>
+                  <h4>Lorem Ipsum</h4>
+                  <button class="test__button">
+                    More
+                  </button>
+                </div>
+              </a>
+              <a class="offer" href="/">
+                <img src="/images/image_pool_2.jpg" alt="" 
+                sizes="(min-width: 992px) 23vw" 
+                srcset="/images/image_pool_2.jpg 200w,
+                /images/image_pool_2.jpg 400w,
+                /images/image_pool_2.jpg 800w"
+                loading="lazy">
+                <div class="offer__text">
+                  <span>Save over 15%</span>
+                  <h4>Lorem Ipsum</h4>
+                  <button class="test__button">
+                    More
+                  </button>
+                </div>
+              </a>
+              <a class="offer" href="/">
+                <img src="/images/image_bar.jpg" alt="" 
+                sizes="(min-width: 992px) 23vw" 
+                srcset="/images/image_bar.jpg 200w,
+                /images/image_bar.jpg 400w,
+                /images/image_bar.jpg 800w"
+                loading="lazy">
+                <div class="offer__text">
+                  <span>Save over 15%</span>
+                  <h4>Lorem Ipsum</h4>
+                  <button class="test__button">
+                    More
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+          <div class="test__container">
+            <div class="footer-top">
+              <div class="footer__col menu">
+                <h3 class="title">menu</h3>
+                <ul class="info">
+                  <li>
+                    <a href="">Location</a>
+                  </li>
+                  <li>
+                    <a href="">Spiaggia Excelsior</a>
+                  </li>
+                  <li>
+                    <a href="">Spiaggia Quattro Fontane</a>
+                  </li>
+                  <li>
+                    <a href="">Elimar</a
+                    ></li>
+                  <li>
+                    <a href="">Attività</a>
+                  </li>
+                  <li>
+                    <a href="">Wedding</a>
+                  </li>
+                  <li>
+                    <a href="">Listini 2024</a>
+                  </li>
+                  <li>
+                    <a href="">Offerte</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__col contacts">
+                <h3 class="title">Contact</h3>
+                <ul class="info">
+                  <li>Loren ipsum dolor</li>
+                  <li>Lovina, Buleleng, Venezia</li>
+                  <li>+62 123 456 7890</li>
+                  <li>loren@lorenipsum.com</li>
+                </ul>
+              </div>
+              <div class="footer__col socials">
+                <div class="links-section">
+                  <h3 class="title">Follow</h3>
+                  <ul class="links">
+                    <li>
+                      <a href="">
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">Loren Ipsum</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="newsletter-section">
+                  <h3 class="title">subscribe to our newsletter</h3>
+                  <input type="email" name="email" id="email" placeholder="email and press enter">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-end">
+            <div class="test__container">
+              <div>© 2025 loremipsum</div>
+              <div>made by <span>relactions</span></div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
